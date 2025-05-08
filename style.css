@@ -412,6 +412,41 @@ footer {
   margin-top: 3rem;
 }
 
+/* Perangkat kecil (ponsel landscape, 576px ke atas) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* Perangkat medium (tablet, 768px ke atas) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .content-wrapper {
+    display: flex;
+  }
+
+  .main-content {
+    flex: 2;
+  }
+
+  .sidebar {
+    display: block;
+    flex: 1;
+    padding: 1rem;
+    background: #ddd;
+  }
+}
+
 /* media Queris */
 
 /* laptop */
@@ -422,7 +457,6 @@ footer {
 }
 
 /* moba */
-
 @media (max-width: 450px) {
   html {
     font-size: 55%;
